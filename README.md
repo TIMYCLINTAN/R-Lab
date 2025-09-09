@@ -33,3 +33,22 @@ if __name__ == "__main__":
         print("No solution exists.")
 
 
+        .
+
+
+        Procedure
+1.  Start from the initial state (0,0) → both jugs empty.
+2. Use a queue (FIFO) to store states and their paths.
+3.  Maintain a visited set to avoid repeating states.
+4.  At each step, generate all possible states by applying the operations:
+•	Fill Jug1
+•	Fill Jug2
+•	Empty Jug1
+•	Empty Jug2
+•	Pour Jug1 → Jug2
+•	Pour Jug2 → Jug1
+5.  If at any state, the amount of water in Jug1 or Jug2 equals the target d, stop and return the path.
+6.  If the queue becomes empty, it means no solution exists.
+
+
+
