@@ -1,0 +1,95 @@
+Programs using NumPy and Pandas
+Aim:
+To implement Python programs using NumPy and Pandas libraries for data collection, statistical analysis, and classification using a machine learning model on real-world and user-defined datasets.
+Procedure:
+Step 1: Import the required libraries, including NumPy for performing numerical and statistical operations, and Pandas for managing and analysing structured tabular data.
+Step 2: Create a method to collect structured data from the user, such as names, ages, and scores. Organise this data using NumPy arrays to enable efficient numeric computations.
+Step 3: Use NumPy to calculate overall statistical measures like averages or totals by processing only the numerical portions of the dataset.
+Step 4: Identify top-performing records based on calculated scores by sorting the NumPy array in descending order and selecting the highest values.
+Step 5: Apply conditional filtering to the NumPy array to select records that meet specific criteria, such as a minimum age or subject score, using logical indexing techniques.
+Step 6: Load a predefined dataset for analysis and model development. Convert this dataset into a Pandas DataFrame to facilitate structured data operations and easy column access.
+Step 7: Rename the columns of the Pandas DataFrame appropriately and include an additional column to represent categorical class labels or output values.
+Step 8: Explore the dataset using Pandas by checking for any missing data and summarising the distribution of values through descriptive statistics.
+Step 9: Divide the dataset into training and testing portions for the purpose of building and evaluating a machine learning model. Ensure consistency by using a fixed method for the split.
+Step 10: Select and train a classification model using the training portion of the data. Use the trained model to make predictions on the testing data.
+Step 11: Evaluate the performance of the model by comparing predicted values with actual outcomes. Interpret the results using standard accuracy and error analysis methods.
+ Code 1a:
+Code 1b:
+Output:
+Result:
+The programs were successfully implemented using NumPy and Pandas libraries. NumPy was used to handle and analyse structured numerical data efficiently, while Pandas was used to organise and explore tabular data.
+
+
+Visualizing using Graphs
+Aim:
+To develop a Python program for analysing and visualising data using graphical representations. The objective is to use various types of plots to understand data distribution, relationships, and patterns within a dataset effectively.
+Procedure:
+Step 1: Import the necessary libraries for data analysis and visualisation, such as Pandas, Matplotlib, Seaborn, and tools to load datasets.
+Step 2: Load a structured dataset suitable for visualisation and convert it into a tabular format using Pandas for easy handling.
+Step 3: Explore the dataset by viewing its structure, checking for missing values, and generating basic statistical summaries.
+Step 4: Create line plots to observe trends or changes in numerical values across records.
+Step 5: Use scatter plots to study relationships between two numerical attributes, possibly colour-coded by category.
+Step 6: Draw bar plots to display the frequency distribution of categorical data.
+Step 7: Plot histograms to understand the distribution of a numerical feature across intervals.
+Step 8: Generate box plots to compare the distribution and spread of values across different categories.
+Step 9: Use advanced visualisations such as count plots, violin plots, KDE plots, and pair plots to analyse patterns, relationships, and class-wise comparisons in the dataset.
+Step 10: Display a heatmap to show the correlation between different features, highlighting the strength and direction of relationships.
+Code 1a:
+Code 1b:
+Output:
+Result:
+The program was successfully implemented to visualise data using graphs, helping to understand distributions, compare features, and identify patterns for better analysis.
+
+
+
+
+
+Supervised data compression via linear discriminant analysis
+Aim:
+To implement Linear Discriminant Analysis (LDA) for supervised dimensionality reduction and evaluate its impact on the performance of a K-Nearest Neighbors (KNN) classifier using the Iris dataset.
+Procedure:
+Step 1: Import necessary libraries such as NumPy, Pandas, and modules from scikit-learn including datasets, model_selection, preprocessing, discriminant_analysis, neighbors, and metrics.
+Step 2: Load the Iris dataset and extract the features (X) and target labels (y) using load_iris() from sklearn.datasets.
+Step 3: Display the range (minimum and maximum) of each feature before applying any scaling.
+Step 4: Split the dataset into training and testing sets using a 70:30 ratio with a fixed random seed to ensure reproducibility.
+Step 5: Apply feature scaling on the training data using StandardScaler to standardize the features.
+Step 6: Train a KNN classifier on the original four-dimensional data and record its accuracy and confusion matrix.
+Step 7: Apply Linear Discriminant Analysis (LDA) on the training data to reduce the number of dimensions from four to two.
+Step 8: Train another KNN classifier using the LDA-reduced data and compare its performance with the previous model.
+Step 9: Evaluate both models using accuracy scores and confusion matrices to assess the impact of dimensionality reduction.
+Code:
+Output:
+Result:
+The program was successfully implemented using LDA to reduce the number of features. The KNN classifier was tested before and after applying LDA, and the results showed that LDA helped keep or improve the accuracy with fewer features.
+ 
+Unsupervised data compression using principal component analysis
+Aim:
+To perform unsupervised dimensionality reduction using Principal Component Analysis (PCA) and apply K-Means clustering on the reduced dataset to identify inherent patterns in the Iris dataset without using class labels.
+Procedure:
+Step 1: Import required libraries – NumPy, PCA, KMeans, and datasets from scikit-learn.
+Step 2: Load the Iris dataset and extract its features.
+Step 3: Standardize the features using StandardScaler to bring them to a common scale.
+Step 4: Apply PCA to reduce the dataset to two principal components.
+Step 5: Display the explained variance ratio and principal component vectors.
+Step 6: Apply K-Means clustering on the PCA-transformed data to form clusters.
+Code:
+Output:
+Result:
+The program was successfully implemented using PCA for dimensionality reduction and K-Means for clustering. It helped in reducing the number of features and grouping the data based on patterns without using target labels.
+ 
+Classification with support vector machines (SVM)
+Aim:
+To classify data using the Support Vector Machine algorithm and evaluate its performance with accuracy and other classification metrics.
+Procedure:
+Step 1: Import necessary libraries for data handling, preprocessing, modelling, and evaluation.
+Step 2: Load and explore the dataset to understand its structure and content.
+Step 3: Separate the features and the target variable.
+Step 4: Standardise the feature values for uniform scaling.
+Step 5: Split the dataset into training and testing sets.
+Step 6: Build and train the SVM classifier using the training data.
+Step 7: Use the trained model to make predictions on the test data.
+Step 8: Evaluate the model using accuracy, precision, recall, and F1-score.
+Code:
+Output:
+Result:
+The program was successfully implemented to classify data using the SVM algorithm. The model’s performance was evaluated using various metrics, demonstrating its ability to accurately predict class labels.
